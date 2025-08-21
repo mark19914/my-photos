@@ -2,114 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechSecure Employee Portal</title>
+  <title>Jane Hopper Photography</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f1f1f1;
+      background: #f4f4f9;
+      color: #333;
+      text-align: center;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+      background: #3f51b5;
+      color: white;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
-      color: #00e6e6;
+      font-size: 2em;
     }
 
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
+    .container {
+      margin: 40px auto;
+      max-width: 600px;
+      background: white;
       border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .container img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
-    .card h2 {
-      margin-top: 0;
-      color: #00e6e6;
-      font-size: 1.5rem;
-    }
-
-    .upload-box {
-      border: 2px dashed #00e6e6;
-      border-radius: 10px;
-      padding: 2rem;
-      text-align: center;
-      color: #aaa;
-      cursor: pointer;
+    .download-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #3f51b5;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
       transition: background 0.3s ease;
     }
 
-    .upload-box:hover {
-      background: rgba(0, 230, 230, 0.1);
+    .download-btn:hover {
+      background: #2c3a9d;
     }
 
     footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 3rem;
+      margin-top: 40px;
+      font-size: 14px;
+      color: gray;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>TechSecure Employee Portal</h1>
-    <p>Confidential - Authorized Access Only</p>
+    <h1>Jane Hopper’s Photo Archive</h1>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>Welcome</h2>
-      <p>Only employees of TechSecure may access this portal. Uploads and credentials are monitored. 
-      Unauthorized access is strictly prohibited.</p>
-    </div>
-
-    <div class="card">
-      <h2>Upload Center</h2>
-      <div class="upload-box">
-        <p>Click here to upload your document</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Announcements</h2>
-      <p>Please ensure your employee profiles are updated with correct project details. 
-      The HR team will conduct an audit this week.</p>
-    </div>
-  </main>
+  <div class="container">
+    <h2>Latest Shot 📸</h2>
+    <img src="challenge.jpg" alt="Jane Hopper latest photo">
+    <p>Want the full-resolution version?</p>
+    <a href="challenge.jpg" download class="download-btn">📥 Download High-Quality Image</a>
+  </div>
 
   <footer>
-    &copy; 2025 TechSecure Inc. All rights reserved.
+    <p>(Direct download recommended for best quality)</p>
   </footer>
-
 </body>
 </html>
