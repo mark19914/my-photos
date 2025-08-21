@@ -2,14 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jane Hopper Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSecure Employee Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00e6e6;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #00e6e6;
+      font-size: 1.5rem;
+    }
+
+    .upload-box {
+      border: 2px dashed #00e6e6;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .upload-box:hover {
+      background: rgba(0, 230, 230, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
-  <h1>Welcome to Jane Hopper’s Photo Archive</h1>
-  <p>Here’s one of my latest shots 📸</p>
-  <a href="challenge.jpg" download>📥 Download High-Quality Image</a>
-  <p style="margin-top:20px; font-size:14px; color:gray;">
-    (Direct download recommended for best quality)
-  </p>
+<body>
+
+  <header>
+    <h1>TechSecure Employee Portal</h1>
+    <p>Confidential - Authorized Access Only</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>Only employees of TechSecure may access this portal. Uploads and credentials are monitored. 
+      Unauthorized access is strictly prohibited.</p>
+    </div>
+
+    <div class="card">
+      <h2>Upload Center</h2>
+      <div class="upload-box">
+        <p>Click here to upload your document</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Announcements</h2>
+      <p>Please ensure your employee profiles are updated with correct project details. 
+      The HR team will conduct an audit this week.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 TechSecure Inc. All rights reserved.
+  </footer>
+
 </body>
 </html>
